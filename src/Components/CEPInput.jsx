@@ -2,6 +2,11 @@ import React, { useEffect, useRef } from "react";
 import { TextField, Box } from "@mui/material";
 import IMask from "imask";
 
+/**
+ * Componente para o campo de entrada de CEP.
+ * Aplica uma máscara para formatar corretamente o CEP no padrão XXXXX-XXX.
+ */
+
 const CEPInput = ({ value, onChange }) => {
   const inputRef = useRef(null);
 

@@ -2,6 +2,11 @@ import React, { useEffect, useRef } from "react";
 import { TextField, Box } from "@mui/material";
 import IMask from "imask";
 
+/**
+ * Componente para o campo de entrada de CPF.
+ * Aplica uma máscara para formatar corretamente o CPF no padrão XXX.XXX.XXX-XX.
+ */
+
 const CPFInput = ({ value, onChange }) => {
   const inputRef = useRef(null);
 

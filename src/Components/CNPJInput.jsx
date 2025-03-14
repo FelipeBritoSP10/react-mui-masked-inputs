@@ -2,6 +2,11 @@ import React, { useRef, useEffect } from "react";
 import { TextField } from "@mui/material";
 import IMask from "imask";
 
+/**
+ * Componente para o campo de entrada de CNPJ.
+ * Aplica uma máscara para formatar corretamente o CNPJ no padrão XX.XXX.XXX/0001-XX.
+ */
+
 const CnpjInput = ({ value, onChange }) => {
   const inputRef = useRef(null);
 

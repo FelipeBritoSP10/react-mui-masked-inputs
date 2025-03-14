@@ -2,6 +2,11 @@ import React, { useEffect, useRef } from "react";
 import { TextField, Box } from "@mui/material";
 import IMask from "imask";
 
+/**
+ * Componente para o campo de entrada de telefone.
+ * Aplica uma máscara para formatar corretamente o número.
+ */
+
 const PhoneInput = ({ value, onChange }) => {
   const inputRef = useRef(null);
 
@@ -9,6 +14,7 @@ const PhoneInput = ({ value, onChange }) => {
     const inputElement = inputRef.current?.querySelector("input");
     if (!inputElement) return;
 
+    // Aplica a máscara para números fixos e celulares
     const mask = IMask(inputElement, {
       mask: ["(00) 0000-0000", "(00) 00000-0000"],
     });

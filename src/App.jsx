@@ -9,6 +9,7 @@ import PhoneInput from "./Components/PhoneInput";
 import CNHInput from "./Components/CNHInput";
 
 function App() {
+    // Estados para armazenar os valores dos inputs
   const [cpf, setCpf] = useState("");
   const [cnpj, setCnpj] = useState("");
   const [cep, setCep] = useState("");
