@@ -105,12 +105,24 @@ react-mui-masked-inputs/
 │   │   │-- CEPInput.jsx
 │   │   │-- PhoneInput.jsx
 │   │   │-- DateInput.jsx
+│   │-- Layout/
+│   │   │-- Navbar.jsx
 │   │-- App.jsx
 │   │-- main.jsx
 │-- package.json
 │-- vite.config.js
 │-- README.md
 ```
+
+---
+
+
+## 🏗️ Navbar no Projeto
+
+A Navbar foi adicionada como uma edição para deixar a aplicação mais chamativa, 
+trazendo um design moderno e melhorando a experiência do usuário.
+Ela contribui para a identidade visual do projeto, tornando a navegação mais intuitiva e organizada. 🚀
+
 
 ---
 
