@@ -69,6 +69,8 @@ Esses campos podem ser usados em diversas aplicações, como:
 - **CEPInput**: Formata o CEP no padrão `00000-000`, facilitando buscas e preenchimentos automáticos de endereços
 - **PhoneInput**: Formata telefones no padrão `(00) 00000-0000`, permitindo uma melhor organização e padronização dos números
 - **DateInput**: Permite a entrada de datas no formato `DD/MM/YYYY`, garantindo conformidade e evitando ambiguidades
+- **PisInput**: Formata o PIS no padrão `000.00000.00-0`, garantindo que o número seja preenchido corretamente e no formato exigido pela legislação.
+- **RGInput**: Formata o RG no padrão `00.000.000-0`, garantindo que o número seja preenchido corretamente.
 
 ---
 
@@ -105,6 +107,8 @@ react-mui-masked-inputs/
 │   │   │-- CEPInput.jsx
 │   │   │-- PhoneInput.jsx
 │   │   │-- DateInput.jsx
+│   │   │-- PisInput.jsx
+│   │   │-- RGInput.jsx
 │   │-- Layout/
 │   │   │-- Navbar.jsx
 │   │-- App.jsx

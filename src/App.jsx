@@ -7,15 +7,19 @@ import CEPInput from "./Components/CEPInput";
 import DateInput from "./Components/DateInput";
 import PhoneInput from "./Components/PhoneInput";
 import CNHInput from "./Components/CNHInput";
+import PisInput from "./Components/PisInput";
+import RGInput from "./Components/RGInput";
 
 function App() {
-    // Estados para armazenar os valores dos inputs
+  // Estados para armazenar os valores dos inputs
   const [cpf, setCpf] = useState("");
   const [cnpj, setCnpj] = useState("");
   const [cep, setCep] = useState("");
   const [date, setDate] = useState("");
   const [phone, setPhone] = useState("");
   const [cnh, setCnh] = useState("");
+  const [pis, setPis] = useState("");
+  const [rg, setRG] = useState("");
 
   return (
     <>
@@ -41,6 +45,8 @@ function App() {
           <DateInput value={date} onChange={setDate} />
           <PhoneInput value={phone} onChange={setPhone} />
           <CNHInput value={cnh} onChange={setCnh} />
+          <PisInput value={pis} onChange={setPis} /> 
+          <RGInput value={rg} onChange={setRG} /> 
         </Stack>
       </Box>
     </>
