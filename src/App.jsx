@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Box, Stack } from "@mui/material";
 import NavBar from "./Layout/NavBar";
-import CPFInput from "./Components/Cpfinput";
-import CnpjInput from "./Components/CNPJInput";
-import CEPInput from "./Components/CEPInput";
-import DateInput from "./Components/DateInput";
-import PhoneInput from "./Components/PhoneInput";
-import CNHInput from "./Components/CNHInput";
-import PisInput from "./Components/PisInput";
-import RGInput from "./Components/RGInput";
+import CPFInput from "./Components/Input/IndividualTaxID/Cpfinput";
+import CnpjInput from "./Components/Input/CompanyID/CNPJInput";
+import CEPInput from "./Components/Input/BrazilianZipCode/CEPInput";
+import DateInput from "./Components/Input/DateField/DateInput";
+import PhoneInput from "./Components/Input/PhoneNumber/PhoneInput";
+import CNHInput from "./Components/Input/DriverLicense/CNHInput";
+import PisInput from "./Components/Input/SocialSecurityID/PisInput";
+import RGInput from "./Components/Input/StateID/RGInput";
 
 function App() {
   // Estados para armazenar os valores dos inputs
