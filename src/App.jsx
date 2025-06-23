@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Box, Stack } from "@mui/material";
 import NavBar from "./Layout/NavBar";
-import CPFInput from "./Components/Input/IndividualTaxID/Cpfinput";
-import CnpjInput from "./Components/Input/CompanyID/CNPJInput";
-import CEPInput from "./Components/Input/BrazilianZipCode/CEPInput";
-import DateInput from "./Components/Input/DateField/DateInput";
-import PhoneInput from "./Components/Input/PhoneNumber/PhoneInput";
-import CNHInput from "./Components/Input/DriverLicense/CNHInput";
-import PisInput from "./Components/Input/SocialSecurityID/PisInput";
-import RGInput from "./Components/Input/StateID/RGInput";
+import TaxpayerIdMasked from "./Components/Input/IndividualTaxID/personID/TaxpayerIdMasked";
+import CompanyRegistration from "./Components/Input/CompanyID/corporateIds/CompanyRegistration";
+import ZipcodeBrazil from "./Components/Input/BrazilianZipCode/ZipcodeBrazil";
+import BirthDatePicker from "./Components/Input/DateField/BirthDatePicker";
+import PhoneMasked from "./Components/Input/PhoneNumber/contactNumbers/PhoneMasked";
+import VehicleOperatorLicenseNumber from "./Components/Input/DriverLicense/licenseNumbers/VehicleOperatorLicenseNumber";
+import NationalInsuranceNumber from "./Components/Input/SocialSecurityID//socialBenefits/NationalInsuranceNumber";
+import StateIdDocument from "./Components/Input/StateID//stateDocuments/StateIdDocument";
 
 function App() {
   // Estados para armazenar os valores dos inputs
@@ -39,14 +39,14 @@ function App() {
         }}
       >
         <Stack spacing={2} width="300px">
-          <CPFInput value={cpf} onChange={setCpf} />
-          <CnpjInput value={cnpj} onChange={setCnpj} />
-          <CEPInput value={cep} onChange={setCep} />
-          <DateInput value={date} onChange={setDate} />
-          <PhoneInput value={phone} onChange={setPhone} />
-          <CNHInput value={cnh} onChange={setCnh} />
-          <PisInput value={pis} onChange={setPis} /> 
-          <RGInput value={rg} onChange={setRG} /> 
+          <TaxpayerIdMasked value={cpf} onChange={setCpf} />
+          <CompanyRegistration value={cnpj} onChange={setCnpj} />
+          <ZipcodeBrazil value={cep} onChange={setCep} />
+          <BirthDatePicker value={date} onChange={setDate} />
+          <PhoneMasked value={phone} onChange={setPhone} />
+          <VehicleOperatorLicenseNumber value={cnh} onChange={setCnh} />
+          <NationalInsuranceNumber value={pis} onChange={setPis} /> 
+          <StateIdDocument value={rg} onChange={setRG} /> 
         </Stack>
       </Box>
     </>

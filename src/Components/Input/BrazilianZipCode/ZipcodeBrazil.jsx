@@ -7,7 +7,7 @@ import IMask from "imask";
  * Aplica uma máscara para formatar corretamente o CEP no padrão XXXXX-XXX.
  */
 
-const CEPInput = ({ value, onChange }) => {
+const ZipcodeBrazil = ({ value, onChange }) => {
   const inputRef = useRef(null);
 
   useEffect(() => {
@@ -32,4 +32,4 @@ const CEPInput = ({ value, onChange }) => {
   );
 };
 
-export default CEPInput;
+export default ZipcodeBrazil;
