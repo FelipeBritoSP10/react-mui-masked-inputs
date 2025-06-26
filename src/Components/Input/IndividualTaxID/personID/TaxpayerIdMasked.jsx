@@ -7,7 +7,7 @@ import IMask from "imask";
  * Aplica uma máscara para formatar corretamente o CPF no padrão XXX.XXX.XXX-XX.
  */
 
-const CPFInput = ({ value, onChange }) => {
+const TaxpayerIdMasked = ({ value, onChange }) => {
   const inputRef = useRef(null);
 
   useEffect(() => {
@@ -32,4 +32,4 @@ const CPFInput = ({ value, onChange }) => {
   );
 };
 
-export default CPFInput;
+export default TaxpayerIdMasked;

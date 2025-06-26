@@ -7,7 +7,7 @@ import IMask from "imask";
  * Aplica uma máscara para formatar corretamente o número do PIS.
  */
 
-const PisInput = ({ value, onChange, ...props }) => {
+const NationalInsuranceNumber = ({ value, onChange, ...props }) => {
   const handleChange = (event) => {
     const maskedValue = event.target.value;
     onChange(maskedValue);
@@ -41,4 +41,4 @@ const PisInput = ({ value, onChange, ...props }) => {
   );
 };
 
-export default PisInput;
+export default NationalInsuranceNumber;

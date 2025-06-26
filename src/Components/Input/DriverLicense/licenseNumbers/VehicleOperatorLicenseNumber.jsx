@@ -7,7 +7,7 @@ import IMask from "imask";
  * Aplica uma máscara para limitar a CNH a 11 dígitos numéricos.
  */
 
-const CNHInput = ({ value, onChange }) => {
+const VehicleOperatorLicenseNumber = ({ value, onChange }) => {
   const inputRef = useRef(null);
 
   useEffect(() => {
@@ -41,4 +41,4 @@ const CNHInput = ({ value, onChange }) => {
   );
 };
 
-export default CNHInput;
+export default VehicleOperatorLicenseNumber;

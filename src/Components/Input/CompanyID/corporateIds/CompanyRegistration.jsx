@@ -7,7 +7,7 @@ import IMask from "imask";
  * Aplica uma máscara para formatar corretamente o CNPJ no padrão XX.XXX.XXX/0001-XX.
  */
 
-const CnpjInput = ({ value, onChange }) => {
+const CompanyRegistration = ({ value, onChange }) => {
   const inputRef = useRef(null);
 
   useEffect(() => {
@@ -34,4 +34,4 @@ const CnpjInput = ({ value, onChange }) => {
   );
 };
 
-export default CnpjInput;
+export default CompanyRegistration;

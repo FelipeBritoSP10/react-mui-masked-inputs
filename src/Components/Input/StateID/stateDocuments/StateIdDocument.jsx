@@ -7,7 +7,7 @@ import IMask from "imask";
  * Aplica uma máscara para formatar corretamente o número.
  */
 
-const RGInput = ({ value, onChange, ...props }) => {
+const StadeIdDocument = ({ value, onChange, ...props }) => {
     const inputRef = React.useRef();
 
     React.useEffect(() => {
@@ -36,4 +36,4 @@ const RGInput = ({ value, onChange, ...props }) => {
     );
 };
 
-export default RGInput;
+export default StadeIdDocument;

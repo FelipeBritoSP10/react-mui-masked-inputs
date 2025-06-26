@@ -7,7 +7,7 @@ import IMask from "imask";
  * Aplica uma máscara para formatar corretamente o número.
  */
 
-const PhoneInput = ({ value, onChange }) => {
+const PhoneMasked = ({ value, onChange }) => {
   const inputRef = useRef(null);
 
   useEffect(() => {
@@ -30,4 +30,4 @@ const PhoneInput = ({ value, onChange }) => {
   );
 };
 
-export default PhoneInput;
+export default PhoneMasked;

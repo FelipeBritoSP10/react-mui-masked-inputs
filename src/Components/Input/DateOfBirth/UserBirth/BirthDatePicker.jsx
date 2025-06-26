@@ -7,7 +7,7 @@ import IMask from "imask";
  * Utiliza um input do tipo "date" para permitir a seleção de uma data.
  */
 
-const DateInput = ({ value, onChange }) => {
+const BirthDatePicker = ({ value, onChange }) => {
   const inputRef = useRef(null);
 
   useEffect(() => {
@@ -32,4 +32,4 @@ const DateInput = ({ value, onChange }) => {
   );
 };
 
-export default DateInput;
+export default BirthDatePicker;
